@@ -68,6 +68,14 @@
     .contact-lead h2 { font-family:'Noto Serif JP',serif;font-size:1.4rem;font-weight:400;color:var(--ink);line-height:1.7;margin-bottom:0.8rem; }
     .contact-lead p { font-size:0.88rem;color:var(--ink3);line-height:2; }
 
+    .contact-options { display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:3rem; }
+    .co { display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.9rem;padding:2rem 1.5rem;border-radius:10px;border:1px solid var(--line);text-decoration:none;text-align:center;cursor:pointer;transition:border-color 0.2s,background 0.2s;background:var(--bg); }
+    .co:hover { border-color:var(--ink3);background:var(--bg2); }
+    .co.co-active { border-color:var(--ink);background:var(--bg2); }
+    .co-icon { color:var(--ink3); }
+    .co-name { font-size:0.9rem;font-weight:500;color:var(--ink); }
+    .co-desc { font-size:0.78rem;color:var(--ink3);line-height:1.6; }
+
     .contact-form { background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:2.5rem; }
     .form-row { margin-bottom:1.4rem; }
     label { display:block;font-size:0.8rem;font-weight:500;color:var(--ink);margin-bottom:0.45rem; }
@@ -111,6 +119,9 @@
       .contact-form{padding:1.8rem}
       .radio-group{grid-template-columns:1fr}
       .ft-main{flex-direction:column;text-align:center}
+    }
+    @media (max-width:600px) {
+      .contact-options{grid-template-columns:1fr}
     }
   </style>
 </head>
@@ -166,7 +177,25 @@
 
   <div class="contact-lead rv">
     <h2>Tell me what you're thinking.</h2>
-    <p>Share your goals, how you'll use the photos, or any ideas you have.<br>I'll get back to you within 2 business days.</p>
+    <p>Share your goals, how you'll use the photos, or any ideas you have.<br>Choose whichever way works best for you.</p>
+  </div>
+
+  <!-- Contact method -->
+  <div class="contact-options rv">
+    <button class="co co-active" id="optEmail" onclick="showEmail()">
+      <div class="co-icon">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 7l10 8 10-8"/></svg>
+      </div>
+      <div class="co-name">Email Form</div>
+      <div class="co-desc">Fill out the form below.<br>Reply within 2 business days.</div>
+    </button>
+    <a class="co" href="https://www.instagram.com/masumasumasuo7/" target="_blank" rel="noopener">
+      <div class="co-icon">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+      </div>
+      <div class="co-name">Instagram DM</div>
+      <div class="co-desc">Message @masumasumasuo7<br>directly on Instagram.</div>
+    </a>
   </div>
 
   <div class="contact-form rv" id="contactForm">
@@ -251,6 +280,12 @@
     entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); } });
   }, { threshold: 0.08 });
   document.querySelectorAll('.rv').forEach(el => obs.observe(el));
+
+  function showEmail() {
+    document.getElementById('contactForm').style.display = 'block';
+    document.getElementById('formThanks').style.display = 'none';
+    document.getElementById('optEmail').classList.add('co-active');
+  }
 
   const menuBtn = document.getElementById('menuBtn');
   const mobileNav = document.getElementById('mobileNav');
