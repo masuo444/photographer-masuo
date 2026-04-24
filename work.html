@@ -6,6 +6,9 @@
   <title>作品集 | 山梨・富士山エリアのフォトグラファー KEISUKE MASUO</title>
   <meta name="description" content="フォトグラファー KEISUKE MASUO (MaSU) の作品集。ポートレート・プロフィール写真・イベント撮影など。新世界ファッションショー、アイルランド、ドバイ、パリ、台湾など世界各地での撮影実績。" />
   <link rel="canonical" href="https://photographer.fomus.jp/work.html" />
+  <link rel="alternate" hreflang="ja" href="https://photographer.fomus.jp/work.html" />
+  <link rel="alternate" hreflang="en" href="https://photographer.fomus.jp/en/work.html" />
+  <link rel="alternate" hreflang="x-default" href="https://photographer.fomus.jp/work.html" />
   <!-- OGP -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="KEISUKE MASUO (MaSU)" />
@@ -44,6 +47,14 @@
     .hd-nav a.current { color: var(--ink); font-weight: 500; }
     .hd-cta { flex-shrink: 0; display: inline-flex; align-items: center; gap: 0.35rem; background: var(--ink); color: #fff; font-size: 0.76rem; font-weight: 500; letter-spacing: 0.05em; padding: 0.55rem 1.15rem; border-radius: 20px; text-decoration: none; transition: opacity 0.2s; }
     .hd-cta:hover { opacity: 0.75; }
+    .lang-sw { display: flex; align-items: center; gap: 2px; flex-shrink: 0; }
+    .ls-btn { font-size: 0.68rem; font-weight: 500; letter-spacing: 0.08em; color: var(--ink3); text-decoration: none; padding: 0.28rem 0.52rem; border-radius: 3px; transition: color 0.15s, background 0.15s; }
+    .ls-btn:hover { color: var(--ink); }
+    .ls-btn.ls-on { color: var(--ink); background: var(--bg2); }
+    .mob-lang { display: flex; gap: 4px; margin-top: 1.2rem; justify-content: center; }
+    .mob-lang a { font-size: 0.78rem; font-weight: 500; letter-spacing: 0.08em; color: rgba(255,255,255,0.5); text-decoration: none; padding: 0.35rem 0.8rem; border-radius: 4px; border: 1px solid rgba(255,255,255,0.18); transition: color 0.15s, background 0.15s; }
+    .mob-lang a.ls-on { color: #fff; background: rgba(255,255,255,0.14); border-color: rgba(255,255,255,0.4); }
+    .mob-lang a:hover { color: #fff; }
 
     /* ─── MOBILE NAV ─── */
     .hd-menu-btn { display: none; background: none; border: none; cursor: pointer; color: var(--ink); padding: 0.3rem; margin-left: auto; }
@@ -367,6 +378,10 @@
       <li><a href="faq.html">FAQ</a></li>
     </ul>
     <a href="contact.html" class="hd-cta">撮影の相談をする</a>
+    <div class="lang-sw">
+      <a href="work.html" class="ls-btn ls-on">JA</a>
+      <a href="en/work.html" class="ls-btn">EN</a>
+    </div>
     <button class="hd-menu-btn" id="menuBtn" aria-label="メニュー">
       <svg width="22" height="16" viewBox="0 0 22 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 1h20M1 8h20M1 15h20"/></svg>
     </button>
@@ -384,6 +399,10 @@
     <a href="work.html">ワーク</a>
     <a href="faq.html">FAQ</a>
     <a href="contact.html" class="mobile-nav-cta-link">撮影の相談をする</a>
+    <div class="mob-lang">
+      <a href="work.html" class="ls-on">JA</a>
+      <a href="en/work.html">EN</a>
+    </div>
   </nav>
 </div>
 

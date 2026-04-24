@@ -1,28 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Japanese pages -->
   <url>
     <loc>https://photographer.fomus.jp/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://photographer.fomus.jp/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://photographer.fomus.jp/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://photographer.fomus.jp/"/>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://photographer.fomus.jp/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://photographer.fomus.jp/about.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://photographer.fomus.jp/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://photographer.fomus.jp/about.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://photographer.fomus.jp/work.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://photographer.fomus.jp/work.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://photographer.fomus.jp/en/work.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://photographer.fomus.jp/work.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://photographer.fomus.jp/faq.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://photographer.fomus.jp/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://photographer.fomus.jp/en/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://photographer.fomus.jp/faq.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://photographer.fomus.jp/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://photographer.fomus.jp/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://photographer.fomus.jp/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://photographer.fomus.jp/contact.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+
+  <!-- English pages -->
+  <url>
+    <loc>https://photographer.fomus.jp/en/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://photographer.fomus.jp/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://photographer.fomus.jp/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://photographer.fomus.jp/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://photographer.fomus.jp/en/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://photographer.fomus.jp/about.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://photographer.fomus.jp/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://photographer.fomus.jp/about.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://photographer.fomus.jp/en/work.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://photographer.fomus.jp/work.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://photographer.fomus.jp/en/work.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://photographer.fomus.jp/work.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://photographer.fomus.jp/en/faq.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://photographer.fomus.jp/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://photographer.fomus.jp/en/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://photographer.fomus.jp/faq.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://photographer.fomus.jp/en/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://photographer.fomus.jp/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://photographer.fomus.jp/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://photographer.fomus.jp/contact.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
 </urlset>

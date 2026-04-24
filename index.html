@@ -7,6 +7,9 @@
   <meta name="description" content="笛吹市 石和温泉拠点のフォトグラファー KEISUKE MASUO (MaSU)。富士山・河口湖・甲府・笛吹・山梨エリアでのポートレート・プロフィール写真・イベント撮影。Mt. Fuji location sessions from $550." />
   <meta name="keywords" content="富士山 フォトグラファー, 河口湖 フォトグラファー, 笛吹 フォトグラファー, 甲府 フォトグラファー, 石和温泉 撮影, 山梨 フォトグラファー, 笛吹市 カメラマン, 甲府市 カメラマン, ポートレート 山梨, プロフィール写真 甲府, Mt Fuji photographer, Kawaguchiko photographer, Yamanashi photographer, Fuefuki photographer, Isawa Onsen photographer, Japan portrait photographer" />
   <link rel="canonical" href="https://photographer.fomus.jp/" />
+  <link rel="alternate" hreflang="ja" href="https://photographer.fomus.jp/" />
+  <link rel="alternate" hreflang="en" href="https://photographer.fomus.jp/en/" />
+  <link rel="alternate" hreflang="x-default" href="https://photographer.fomus.jp/" />
   <!-- OGP -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="KEISUKE MASUO (MaSU)" />
@@ -149,6 +152,16 @@
       text-decoration: none; transition: opacity 0.2s;
     }
     .hd-cta:hover { opacity: 0.75; }
+
+    /* ─── LANG SWITCH ─── */
+    .lang-sw { display: flex; align-items: center; gap: 2px; flex-shrink: 0; }
+    .ls-btn { font-size: 0.68rem; font-weight: 500; letter-spacing: 0.08em; color: var(--ink3); text-decoration: none; padding: 0.28rem 0.52rem; border-radius: 3px; transition: color 0.15s, background 0.15s; }
+    .ls-btn:hover { color: var(--ink); }
+    .ls-btn.ls-on { color: var(--ink); background: var(--bg2); }
+    .mob-lang { display: flex; gap: 4px; margin-top: 1.2rem; justify-content: center; }
+    .mob-lang a { font-size: 0.78rem; font-weight: 500; letter-spacing: 0.08em; color: rgba(255,255,255,0.5); text-decoration: none; padding: 0.35rem 0.8rem; border-radius: 4px; border: 1px solid rgba(255,255,255,0.18); transition: color 0.15s, background 0.15s; }
+    .mob-lang a.ls-on { color: #fff; background: rgba(255,255,255,0.14); border-color: rgba(255,255,255,0.4); }
+    .mob-lang a:hover { color: #fff; }
 
     /* ─── HERO ─── */
     .hero {
@@ -693,6 +706,10 @@
       <li><a href="faq.html">FAQ</a></li>
     </ul>
     <a href="contact.html" class="hd-cta">撮影の相談をする</a>
+    <div class="lang-sw">
+      <a href="index.html" class="ls-btn ls-on">JA</a>
+      <a href="en/" class="ls-btn">EN</a>
+    </div>
     <button class="hd-menu-btn" id="menuBtn" aria-label="メニュー">
       <svg width="22" height="16" viewBox="0 0 22 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 1h20M1 8h20M1 15h20"/></svg>
     </button>
@@ -710,6 +727,10 @@
     <a href="work.html">ワーク</a>
     <a href="faq.html">FAQ</a>
     <a href="contact.html" class="mobile-nav-cta-link">撮影の相談をする</a>
+    <div class="mob-lang">
+      <a href="index.html" class="ls-on">JA</a>
+      <a href="en/">EN</a>
+    </div>
   </nav>
 </div>
 
