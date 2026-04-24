@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>撮影の相談 — KEISUKE MASUO (MaSU)</title>
+  <meta name="description" content="撮影のご依頼・ご相談はフォームよりお気軽にどうぞ。2営業日以内にご返信します。" />
+  <!-- OGP -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="KEISUKE MASUO (MaSU)" />
+  <meta property="og:title" content="撮影の相談 — KEISUKE MASUO (MaSU)" />
+  <meta property="og:description" content="撮影のご依頼・ご相談はフォームよりお気軽にどうぞ。2営業日以内にご返信します。" />
+  <meta property="og:image" content="144A2137.JPG" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="撮影の相談 — KEISUKE MASUO (MaSU)" />
+  <meta name="twitter:description" content="撮影のご依頼・ご相談はフォームよりお気軽にどうぞ。2営業日以内にご返信します。" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23181816'/><text x='16' y='23' text-anchor='middle' font-family='serif' font-size='20' fill='white'>M</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --ink:  #181816; --ink2: #3e3e3a; --ink3: #52524e; --ink4: #848480;
+      --bg: #ffffff; --bg2: #f6f6f4; --bg3: #edede9; --line: #e0e0dc; --r: 6px;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Noto Sans JP', sans-serif; font-weight: 400; color: var(--ink); background: var(--bg); -webkit-font-smoothing: antialiased; font-size: 15px; line-height: 1.7; }
+    img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+    /* ─── HEADER ─── */
+    header { position: sticky; top: 0; z-index: 200; background: rgba(255,255,255,0.96); backdrop-filter: blur(14px); border-bottom: 1px solid var(--line); }
+    .hd { max-width: 1160px; margin: 0 auto; padding: 0 2rem; height: 62px; display: flex; align-items: center; gap: 2rem; }
+    .hd-brand { flex-shrink: 0; text-decoration: none; }
+    .hd-brand-name { font-size: 1rem; font-weight: 700; letter-spacing: 0.06em; color: var(--ink); line-height: 1.2; }
+    .hd-brand-sub  { font-size: 0.62rem; color: var(--ink3); letter-spacing: 0.04em; }
+    .hd-nav { flex: 1; display: flex; justify-content: center; list-style: none; }
+    .hd-nav a { font-size: 0.76rem; color: var(--ink2); text-decoration: none; padding: 0.4rem 0.7rem; border-radius: 4px; white-space: nowrap; transition: color 0.15s, background 0.15s; }
+    .hd-nav a:hover { color: var(--ink); background: var(--bg2); }
+    .hd-nav a.current { color: var(--ink); font-weight: 500; }
+    .hd-cta { flex-shrink: 0; display: inline-flex; align-items: center; gap: 0.35rem; background: var(--ink); color: #fff; font-size: 0.76rem; font-weight: 500; letter-spacing: 0.05em; padding: 0.55rem 1.15rem; border-radius: 20px; text-decoration: none; transition: opacity 0.2s; }
+    .hd-cta:hover { opacity: 0.75; }
+
+    /* ─── PAGE HERO ─── */
+    .page-hero { background: var(--bg2); border-bottom: 1px solid var(--line); padding: 5rem 2rem 4rem; text-align: center; }
+    .page-hero-label { font-size: 0.68rem; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink3); margin-bottom: 1rem; }
+    .page-hero-h1 { font-family: 'Noto Serif JP', serif; font-size: clamp(2rem, 4vw, 3rem); font-weight: 400; color: var(--ink); line-height: 1.4; margin-bottom: 0.8rem; }
+    .page-hero-sub { font-size: 0.9rem; color: var(--ink3); }
+
+    /* ─── CONTACT ─── */
+    .contact-wrap { max-width: 680px; margin: 0 auto; padding: 6rem 2rem 8rem; }
+
+    .contact-lead { text-align: center; margin-bottom: 3rem; }
+    .contact-lead h2 { font-family: 'Noto Serif JP', serif; font-size: 1.4rem; font-weight: 400; color: var(--ink); line-height: 1.7; margin-bottom: 0.8rem; }
+    .contact-lead p { font-size: 0.88rem; color: var(--ink3); line-height: 2; }
+
+    /* ─── FORM ─── */
+    .contact-form { background: var(--bg2); border: 1px solid var(--line); border-radius: 10px; padding: 2.5rem; }
+    .form-row { margin-bottom: 1.4rem; }
+    label { display: block; font-size: 0.8rem; font-weight: 500; color: var(--ink); margin-bottom: 0.45rem; }
+    label span { font-size: 0.68rem; font-weight: 400; color: var(--ink4); margin-left: 0.4rem; }
+    input[type="text"], input[type="email"], select, textarea {
+      width: 100%; padding: 0.75rem 1rem;
+      border: 1px solid var(--line); border-radius: var(--r);
+      background: var(--bg); color: var(--ink);
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 0.88rem; outline: none;
+      transition: border-color 0.2s; appearance: none;
+    }
+    input:focus, select:focus, textarea:focus { border-color: var(--ink3); }
+    textarea { resize: vertical; min-height: 120px; line-height: 1.8; }
+    select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23888880' stroke-width='1.5' fill='none'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 1rem center; padding-right: 2.5rem; }
+    .radio-group { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; }
+    .radio-item { display: flex; align-items: center; gap: 0.5rem; }
+    .radio-item input[type="radio"] { width: 16px; height: 16px; accent-color: var(--ink); cursor: pointer; flex-shrink: 0; }
+    .radio-item label { margin-bottom: 0; font-weight: 400; font-size: 0.85rem; cursor: pointer; }
+    .btn-submit { width: 100%; padding: 1rem; background: var(--ink); color: #fff; border: none; border-radius: var(--r); font-family: 'Noto Sans JP', sans-serif; font-size: 0.9rem; font-weight: 500; letter-spacing: 0.06em; cursor: pointer; transition: opacity 0.2s; margin-top: 0.4rem; }
+    .btn-submit:hover { opacity: 0.8; }
+    .form-note { font-size: 0.72rem; color: var(--ink4); text-align: center; margin-top: 0.8rem; }
+    .form-thanks { display: none; text-align: center; padding: 3rem 1rem; }
+    .form-thanks h3 { font-family: 'Noto Serif JP', serif; font-size: 1.3rem; font-weight: 400; color: var(--ink); margin-bottom: 0.8rem; }
+    .form-thanks p { font-size: 0.88rem; color: var(--ink3); }
+
+    /* ─── FOOTER ─── */
+    footer { background: var(--bg2); border-top: 1px solid var(--line); }
+    .ft-main { max-width: 1160px; margin: 0 auto; padding: 2.5rem 2rem; display: flex; justify-content: space-between; align-items: center; gap: 2rem; flex-wrap: wrap; }
+    .ft-logo { font-size: 1rem; font-weight: 700; color: var(--ink); }
+    .ft-sub  { font-size: 0.62rem; color: var(--ink3); }
+    .ft-links { display: flex; gap: 1.3rem; list-style: none; flex-wrap: wrap; }
+    .ft-links a { font-size: 0.75rem; color: var(--ink3); text-decoration: none; transition: color 0.15s; }
+    .ft-links a:hover { color: var(--ink); }
+    .ft-social { display: flex; gap: 0.5rem; }
+    .ft-social a { width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--line); border-radius: 4px; color: var(--ink3); text-decoration: none; transition: border-color 0.2s, color 0.2s; }
+    .ft-social a:hover { border-color: var(--ink3); color: var(--ink); }
+    .ft-bottom { border-top: 1px solid var(--line); max-width: 1160px; margin: 0 auto; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
+    .ft-nav { display: flex; gap: 1.2rem; flex-wrap: wrap; }
+    .ft-nav a { font-size: 0.68rem; color: var(--ink4); text-decoration: none; transition: color 0.15s; }
+    .ft-nav a:hover { color: var(--ink3); }
+    .ft-copy { font-size: 0.68rem; color: var(--ink4); }
+
+    /* ─── ANIMATION ─── */
+    .rv { opacity: 0; transform: translateY(18px); transition: opacity 0.65s ease, transform 0.65s ease; }
+    .rv.in { opacity: 1; transform: none; }
+
+    /* ─── MOBILE NAV ─── */
+    .hd-menu-btn { display: none; background: none; border: none; cursor: pointer; color: var(--ink); padding: 0.3rem; margin-left: auto; }
+    .mobile-nav { display: none; position: fixed; inset: 0; z-index: 400; background: var(--ink); flex-direction: column; align-items: center; justify-content: center; }
+    .mobile-nav.open { display: flex; }
+    .mobile-nav-links { display: flex; flex-direction: column; align-items: center; }
+    .mobile-nav-links a { font-size: 1.05rem; color: rgba(255,255,255,0.7); text-decoration: none; padding: 0.8rem 2.5rem; letter-spacing: 0.06em; transition: color 0.2s; }
+    .mobile-nav-links a:hover { color: #fff; }
+    .mobile-nav-cta-link { margin-top: 0.8rem; background: #fff; color: var(--ink) !important; border-radius: 24px; padding: 0.7rem 2rem !important; font-weight: 500; }
+    .mobile-nav-close { position: absolute; top: 1.3rem; right: 1.3rem; background: none; border: none; cursor: pointer; color: rgba(255,255,255,0.5); transition: color 0.2s; line-height: 1; }
+    .mobile-nav-close:hover { color: #fff; }
+
+    @media (max-width: 980px) {
+      .hd-nav { display: none; }
+      .hd-cta { display: none; }
+      .hd-menu-btn { display: flex; align-items: center; }
+      .ft-main { flex-direction: column; text-align: center; }
+    }
+    @media (max-width: 600px) {
+      .contact-options { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ━━━ HEADER ━━━ -->
+<header>
+  <div class="hd">
+    <a href="index.html" class="hd-brand">
+      <div class="hd-brand-name">KEISUKE MASUO (MaSU)</div>
+      <div class="hd-brand-sub">第一印象を設計するフォトグラファー</div>
+    </a>
+    <ul class="hd-nav">
+      <li><a href="index.html">ホーム</a></li>
+      <li><a href="about.html">プロフィール</a></li>
+      <li><a href="work.html">ワーク</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+    </ul>
+    <a href="contact.html" class="hd-cta current">撮影の相談をする</a>
+    <button class="hd-menu-btn" id="menuBtn" aria-label="メニュー">
+      <svg width="22" height="16" viewBox="0 0 22 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 1h20M1 8h20M1 15h20"/></svg>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-nav-close" id="mobileNavClose" aria-label="閉じる">
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 2l16 16M18 2L2 18"/></svg>
+  </button>
+  <nav class="mobile-nav-links">
+    <a href="index.html">ホーム</a>
+    <a href="about.html">プロフィール</a>
+    <a href="work.html">ワーク</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html" class="mobile-nav-cta-link">撮影の相談をする</a>
+  </nav>
+</div>
+
+<!-- ━━━ PAGE HERO ━━━ -->
+<section class="page-hero rv">
+  <p class="page-hero-label">Contact</p>
+  <h1 class="page-hero-h1">撮影の相談をする</h1>
+  <p class="page-hero-sub">「どんな写真が欲しいか、まだわからない」でも大丈夫です。</p>
+</section>
+
+<!-- ━━━ CONTACT ━━━ -->
+<div class="contact-wrap">
+
+  <div class="contact-lead rv">
+    <h2>まず、話を聞かせてください。</h2>
+    <p>目的・使用シーン・雰囲気など、思っていることをそのままお伝えください。<br>送信後2営業日以内にご返信します。</p>
+  </div>
+
+  <div class="contact-form rv" id="contactForm">
+    <div class="form-row">
+      <label for="name">お名前 <span>必須</span></label>
+      <input type="text" id="name" name="name" placeholder="山田 花子" required />
+    </div>
+    <div class="form-row">
+      <label for="email">メールアドレス <span>必須</span></label>
+      <input type="email" id="email" name="email" placeholder="your@email.com" required />
+    </div>
+    <div class="form-row">
+      <label>撮影の目的 <span>必須</span></label>
+      <div class="radio-group">
+        <label class="radio-item"><input type="radio" name="purpose" value="プロフィール・ビジネス写真" /> <span>プロフィール・ビジネス</span></label>
+        <label class="radio-item"><input type="radio" name="purpose" value="SNS・ポートレート" /> <span>SNS・ポートレート</span></label>
+        <label class="radio-item"><input type="radio" name="purpose" value="イベント・セミナー" /> <span>イベント・セミナー</span></label>
+        <label class="radio-item"><input type="radio" name="purpose" value="その他" /> <span>その他</span></label>
+      </div>
+    </div>
+    <div class="form-row">
+      <label for="timing">希望時期 <span>任意</span></label>
+      <select id="timing" name="timing">
+        <option value="">選択してください</option>
+        <option>1ヶ月以内</option>
+        <option>1〜3ヶ月以内</option>
+        <option>3〜6ヶ月以内</option>
+        <option>時期は未定</option>
+      </select>
+    </div>
+    <div class="form-row">
+      <label for="message">メッセージ <span>任意</span></label>
+      <textarea id="message" name="message" placeholder="撮影のイメージや、気になっていることなどご自由にどうぞ。"></textarea>
+    </div>
+    <button type="button" class="btn-submit" id="submitBtn">送信する</button>
+    <p class="form-note">送信後、メールアプリが開きます。そのまま送信してください。</p>
+  </div>
+
+  <div class="form-thanks" id="formThanks">
+    <h3>ありがとうございます。</h3>
+    <p>2営業日以内にご返信します。<br>しばらくお待ちください。</p>
+  </div>
+
+</div>
+
+<!-- ━━━ FOOTER ━━━ -->
+<footer>
+  <div class="ft-main">
+    <div>
+      <div class="ft-logo">KEISUKE MASUO (MaSU)</div>
+      <div class="ft-sub">第一印象を設計するフォトグラファー</div>
+    </div>
+    <ul class="ft-links">
+      <li><a href="index.html">ホーム</a></li>
+      <li><a href="index.html#flow">撮影の流れ</a></li>
+      <li><a href="index.html#voice">実績・お客様の声</a></li>
+      <li><a href="about.html">プロフィール</a></li>
+      <li><a href="work.html">作品を見る</a></li>
+      <li><a href="faq.html">よくある質問</a></li>
+    </ul>
+    <div class="ft-social">
+      <a href="https://www.instagram.com/masumasumasuo7/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+      <a href="contact.html" aria-label="Email"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 7l10 8 10-8"/></svg></a>
+    </div>
+  </div>
+  <div class="ft-bottom">
+    <nav class="ft-nav">
+      <a href="index.html">ホーム</a>
+      <a href="index.html#flow">撮影の流れ</a>
+      <a href="about.html">プロフィール</a>
+      <a href="work.html">作品を見る</a>
+      <a href="faq.html">よくある質問</a>
+      <a href="contact.html">お問い合わせ</a>
+    </nav>
+    <span class="ft-copy">© 2025 Keisuke Masuo Photo. All Rights Reserved.</span>
+  </div>
+</footer>
+
+<script>
+  // スクロールアニメーション
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); } });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.rv').forEach(el => obs.observe(el));
+
+  // Mobile menu
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileNav = document.getElementById('mobileNav');
+  const mobileNavClose = document.getElementById('mobileNavClose');
+  menuBtn.addEventListener('click', () => mobileNav.classList.add('open'));
+  mobileNavClose.addEventListener('click', () => mobileNav.classList.remove('open'));
+  mobileNav.addEventListener('click', e => { if (e.target === mobileNav) mobileNav.classList.remove('open'); });
+
+  // Contact form → mailto
+  document.getElementById('submitBtn').addEventListener('click', () => {
+    const name    = document.getElementById('name').value.trim();
+    const email   = document.getElementById('email').value.trim();
+    const purpose = document.querySelector('input[name="purpose"]:checked');
+    const timing  = document.getElementById('timing').value;
+    const message = document.getElementById('message').value.trim();
+
+    if (!name || !email || !purpose) {
+      alert('お名前・メールアドレス・撮影の目的は必須です。');
+      return;
+    }
+
+    const body = [
+      `お名前: ${name}`,
+      `メールアドレス: ${email}`,
+      `撮影の目的: ${purpose.value}`,
+      `希望時期: ${timing || '未記入'}`,
+      '',
+      `メッセージ:`,
+      message || '（なし）',
+    ].join('\n');
+
+    const mailto = `mailto:contact@fomus.jp?subject=${encodeURIComponent('【撮影相談】' + name)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailto;
+
+    document.getElementById('contactForm').style.display = 'none';
+    document.getElementById('formThanks').style.display = 'block';
+  });
+</script>
+</body>
+</html>

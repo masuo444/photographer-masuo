@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>よくある質問 — KEISUKE MASUO (MaSU)</title>
+  <meta name="description" content="撮影の流れ・料金・納品・予約方法など、よくいただくご質問をまとめました。" />
+  <!-- OGP -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="KEISUKE MASUO (MaSU)" />
+  <meta property="og:title" content="よくある質問 — KEISUKE MASUO (MaSU)" />
+  <meta property="og:description" content="撮影の流れ・料金・納品・予約方法など、よくいただくご質問をまとめました。" />
+  <meta property="og:image" content="144A2137.JPG" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="よくある質問 — KEISUKE MASUO (MaSU)" />
+  <meta name="twitter:description" content="撮影の流れ・料金・納品・予約方法など、よくいただくご質問をまとめました。" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23181816'/><text x='16' y='23' text-anchor='middle' font-family='serif' font-size='20' fill='white'>M</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --ink:  #181816; --ink2: #3e3e3a; --ink3: #52524e; --ink4: #848480;
+      --bg: #ffffff; --bg2: #f6f6f4; --bg3: #edede9; --line: #e0e0dc; --r: 6px;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Noto Sans JP', sans-serif; font-weight: 400; color: var(--ink); background: var(--bg); -webkit-font-smoothing: antialiased; font-size: 15px; line-height: 1.7; }
+    img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+    /* ─── HEADER ─── */
+    header { position: sticky; top: 0; z-index: 200; background: rgba(255,255,255,0.96); backdrop-filter: blur(14px); border-bottom: 1px solid var(--line); }
+    .hd { max-width: 1160px; margin: 0 auto; padding: 0 2rem; height: 62px; display: flex; align-items: center; gap: 2rem; }
+    .hd-brand { flex-shrink: 0; text-decoration: none; }
+    .hd-brand-name { font-size: 1rem; font-weight: 700; letter-spacing: 0.06em; color: var(--ink); line-height: 1.2; }
+    .hd-brand-sub  { font-size: 0.62rem; color: var(--ink3); letter-spacing: 0.04em; }
+    .hd-nav { flex: 1; display: flex; justify-content: center; list-style: none; }
+    .hd-nav a { font-size: 0.76rem; color: var(--ink2); text-decoration: none; padding: 0.4rem 0.7rem; border-radius: 4px; white-space: nowrap; transition: color 0.15s, background 0.15s; }
+    .hd-nav a:hover { color: var(--ink); background: var(--bg2); }
+    .hd-nav a.current { color: var(--ink); font-weight: 500; }
+    .hd-cta { flex-shrink: 0; display: inline-flex; align-items: center; gap: 0.35rem; background: var(--ink); color: #fff; font-size: 0.76rem; font-weight: 500; letter-spacing: 0.05em; padding: 0.55rem 1.15rem; border-radius: 20px; text-decoration: none; transition: opacity 0.2s; }
+    .hd-cta:hover { opacity: 0.75; }
+
+    /* ─── PAGE HERO ─── */
+    .page-hero { background: var(--bg2); border-bottom: 1px solid var(--line); padding: 5rem 2rem 4rem; text-align: center; }
+    .page-hero-label { font-size: 0.68rem; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink3); margin-bottom: 1rem; }
+    .page-hero-h1 { font-family: 'Noto Serif JP', serif; font-size: clamp(2rem, 4vw, 3rem); font-weight: 400; color: var(--ink); line-height: 1.4; margin-bottom: 0.8rem; }
+    .page-hero-sub { font-size: 0.9rem; color: var(--ink3); }
+
+    /* ─── FAQ ─── */
+    .faq-wrap { max-width: 800px; margin: 0 auto; padding: 5rem 2rem 7rem; }
+
+    .faq-category { margin-bottom: 3.5rem; }
+    .faq-cat-label {
+      font-size: 0.68rem; font-weight: 500; letter-spacing: 0.2em;
+      text-transform: uppercase; color: var(--ink4);
+      padding-bottom: 0.8rem; margin-bottom: 1rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .faq-item { border-bottom: 1px solid var(--line); }
+    .faq-q {
+      width: 100%; text-align: left; background: none; border: none; cursor: pointer;
+      padding: 1.4rem 0; display: flex; justify-content: space-between; align-items: center;
+      gap: 1.5rem; font-family: 'Noto Sans JP', sans-serif;
+      font-size: 0.95rem; font-weight: 500; color: var(--ink); line-height: 1.6;
+    }
+    .faq-q:hover { color: var(--ink2); }
+    .faq-icon {
+      flex-shrink: 0; width: 22px; height: 22px;
+      border: 1px solid var(--line); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--ink3); transition: transform 0.3s ease, background 0.2s;
+    }
+    .faq-item.open .faq-icon { transform: rotate(45deg); background: var(--ink); color: #fff; border-color: var(--ink); }
+    .faq-a {
+      overflow: hidden; max-height: 0;
+      transition: max-height 0.35s ease, padding 0.3s ease;
+    }
+    .faq-a-inner {
+      padding: 0 0 1.4rem;
+      font-size: 0.9rem; color: var(--ink2); line-height: 2;
+    }
+    .faq-item.open .faq-a { max-height: 600px; }
+
+    /* ─── CTA BANNER ─── */
+    .cta-banner { position: relative; overflow: hidden; }
+    .cta-bg { position: absolute; inset: 0; }
+    .cta-bg img { filter: brightness(0.35); }
+    .cta-overlay { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(14,13,10,0.65) 0%, rgba(14,13,10,0.4) 100%); }
+    .cta-in { position: relative; z-index: 1; max-width: 1160px; margin: 0 auto; padding: 6rem 2rem; display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
+    .cta-copy h2 { font-family: 'Noto Serif JP', serif; font-size: clamp(1.7rem, 3vw, 2.4rem); font-weight: 400; color: #fff; line-height: 1.5; margin-bottom: 0.5rem; }
+    .cta-copy p { font-size: 0.85rem; color: rgba(255,255,255,0.55); }
+    .btn-white { flex-shrink: 0; display: inline-flex; align-items: center; gap: 0.4rem; background: #fff; color: var(--ink); font-size: 0.82rem; font-weight: 500; letter-spacing: 0.05em; padding: 0.88rem 1.9rem; border-radius: 4px; text-decoration: none; transition: opacity 0.2s; white-space: nowrap; }
+    .btn-white:hover { opacity: 0.85; }
+
+    /* ─── FOOTER ─── */
+    footer { background: var(--bg2); border-top: 1px solid var(--line); }
+    .ft-main { max-width: 1160px; margin: 0 auto; padding: 2.5rem 2rem; display: flex; justify-content: space-between; align-items: center; gap: 2rem; flex-wrap: wrap; }
+    .ft-logo { font-size: 1rem; font-weight: 700; color: var(--ink); }
+    .ft-sub  { font-size: 0.62rem; color: var(--ink3); }
+    .ft-links { display: flex; gap: 1.3rem; list-style: none; flex-wrap: wrap; }
+    .ft-links a { font-size: 0.75rem; color: var(--ink3); text-decoration: none; transition: color 0.15s; }
+    .ft-links a:hover { color: var(--ink); }
+    .ft-social { display: flex; gap: 0.5rem; }
+    .ft-social a { width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--line); border-radius: 4px; color: var(--ink3); text-decoration: none; transition: border-color 0.2s, color 0.2s; }
+    .ft-social a:hover { border-color: var(--ink3); color: var(--ink); }
+    .ft-bottom { border-top: 1px solid var(--line); max-width: 1160px; margin: 0 auto; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
+    .ft-nav { display: flex; gap: 1.2rem; flex-wrap: wrap; }
+    .ft-nav a { font-size: 0.68rem; color: var(--ink4); text-decoration: none; transition: color 0.15s; }
+    .ft-nav a:hover { color: var(--ink3); }
+    .ft-copy { font-size: 0.68rem; color: var(--ink4); }
+
+    /* ─── ANIMATION ─── */
+    .rv { opacity: 0; transform: translateY(18px); transition: opacity 0.65s ease, transform 0.65s ease; }
+    .rv.in { opacity: 1; transform: none; }
+
+    /* ─── MOBILE NAV ─── */
+    .hd-menu-btn { display: none; background: none; border: none; cursor: pointer; color: var(--ink); padding: 0.3rem; margin-left: auto; }
+    .mobile-nav { display: none; position: fixed; inset: 0; z-index: 400; background: var(--ink); flex-direction: column; align-items: center; justify-content: center; }
+    .mobile-nav.open { display: flex; }
+    .mobile-nav-links { display: flex; flex-direction: column; align-items: center; }
+    .mobile-nav-links a { font-size: 1.05rem; color: rgba(255,255,255,0.7); text-decoration: none; padding: 0.8rem 2.5rem; letter-spacing: 0.06em; transition: color 0.2s; }
+    .mobile-nav-links a:hover { color: #fff; }
+    .mobile-nav-cta-link { margin-top: 0.8rem; background: #fff; color: var(--ink) !important; border-radius: 24px; padding: 0.7rem 2rem !important; font-weight: 500; }
+    .mobile-nav-close { position: absolute; top: 1.3rem; right: 1.3rem; background: none; border: none; cursor: pointer; color: rgba(255,255,255,0.5); transition: color 0.2s; line-height: 1; }
+    .mobile-nav-close:hover { color: #fff; }
+
+    @media (max-width: 980px) {
+      .hd-nav { display: none; }
+      .hd-cta { display: none; }
+      .hd-menu-btn { display: flex; align-items: center; }
+      .cta-in { flex-direction: column; text-align: center; }
+      .ft-main { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ━━━ HEADER ━━━ -->
+<header>
+  <div class="hd">
+    <a href="index.html" class="hd-brand">
+      <div class="hd-brand-name">KEISUKE MASUO (MaSU)</div>
+      <div class="hd-brand-sub">第一印象を設計するフォトグラファー</div>
+    </a>
+    <ul class="hd-nav">
+      <li><a href="index.html">ホーム</a></li>
+      <li><a href="about.html">プロフィール</a></li>
+      <li><a href="work.html">ワーク</a></li>
+      <li><a href="faq.html" class="current">FAQ</a></li>
+    </ul>
+    <a href="contact.html" class="hd-cta">撮影の相談をする</a>
+    <button class="hd-menu-btn" id="menuBtn" aria-label="メニュー">
+      <svg width="22" height="16" viewBox="0 0 22 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 1h20M1 8h20M1 15h20"/></svg>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-nav-close" id="mobileNavClose" aria-label="閉じる">
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 2l16 16M18 2L2 18"/></svg>
+  </button>
+  <nav class="mobile-nav-links">
+    <a href="index.html">ホーム</a>
+    <a href="about.html">プロフィール</a>
+    <a href="work.html">ワーク</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html" class="mobile-nav-cta-link">撮影の相談をする</a>
+  </nav>
+</div>
+
+<!-- ━━━ PAGE HERO ━━━ -->
+<section class="page-hero rv">
+  <p class="page-hero-label">FAQ</p>
+  <h1 class="page-hero-h1">よくある質問</h1>
+  <p class="page-hero-sub">お問い合わせ前に、まずこちらをご確認ください。</p>
+</section>
+
+<!-- ━━━ FAQ ━━━ -->
+<div class="faq-wrap">
+
+  <!-- 撮影について -->
+  <div class="faq-category rv">
+    <p class="faq-cat-label">撮影について</p>
+
+    <div class="faq-item">
+      <button class="faq-q">
+        撮影はどこで行いますか？
+        <span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 1v8M1 5h8"/></svg></span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">屋外での撮影のみ対応しています。公園・神社・街中など、ご希望や目的に合わせてロケーションをご提案します。事前のヒアリングで最適な場所を一緒に決めましょう。</div></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q">
+        撮影時間はどのくらいですか？
+        <span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 1v8M1 5h8"/></svg></span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">1時間〜1時間半です（移動時間を除く）。焦らずリラックスして撮影できるよう、余裕を持ったスケジュールで進めます。</div></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q">
+        雨天の場合はどうなりますか？
+        <span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 1v8M1 5h8"/></svg></span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">雨天の場合は日程を変更します。前日または当日朝に天候を確認の上ご連絡します。無理に決行して後悔しない写真を残したくないので、お互いに納得のいく日に撮りましょう。</div></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q">
+        全国どこでも撮影できますか？
+        <span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 1v8M1 5h8"/></svg></span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">基本的に全国対応しています。遠方の場合は交通費・宿泊費が別途かかる場合がありますので、事前にご相談ください。オンラインでの事前ヒアリングも対応しています。</div></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q">
+        どんな服装で行けばいいですか？
+        <span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 1v8M1 5h8"/></svg></span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">用途に合わせてご相談ください。ビジネス用途であればシャツやジャケットなどが映えやすいです。「どう見せたいか」をヒアリングの中で整理しながら、一緒に考えます。着替えを持参するのもおすすめです。</div></div>
+    </div>
+  </div>
+
+  <!-- 料金について -->
+  <div class="faq-category rv">
+    <p class="faq-cat-label">料金について</p>
+
+    <div class="faq-item">
+      <button class="faq-q">
+        料金はいくらですか？
+        <span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 1v8M1 5h8"/></svg></span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">1セッション 55,000円〜（税込）です。事前ヒアリング・撮影・編集・納品がすべて含まれています。詳しくはお問い合わせください。</div></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q">
+        追加料金はかかりますか？
+        <span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 1v8M1 5h8"/></svg></span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">遠方への出張が必要な場合、交通費・宿泊費が実費で別途かかります。それ以外の追加料金は発生しません。事前に明確にお伝えします。</div></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q">
+        支払い方法を教えてください。
+        <span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 1v8M1 5h8"/></svg></span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">銀行振込にて承っています。ご予約確定後に振込先をご案内します。撮影前日までにお支払いをお願いしています。</div></div>
+    </div>
+  </div>
+
+  <!-- 写真・納品について -->
+  <div class="faq-category rv">
+    <p class="faq-cat-label">写真・納品について</p>
+
+    <div class="faq-item">
+      <button class="faq-q">
+        何枚納品してもらえますか？
+        <span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 1v8M1 5h8"/></svg></span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">枚数より「使える一枚」を重視しています。セレクト・編集済みのデータをお渡しします。目安として20〜40枚程度になることが多いです。</div></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q">
+        納品までどのくらいかかりますか？
+        <span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 1v8M1 5h8"/></svg></span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">撮影から約1週間〜10日以内を目安にお渡しします。急ぎの場合はご相談ください。</div></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q">
+        データの形式・受け取り方法は？
+        <span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 1v8M1 5h8"/></svg></span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">JPEG形式でのお渡しとなります。Google DriveなどオンラインストレージのURLをお送りします。ダウンロード後はご自由にお使いください。</div></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q">
+        写真をSNSやホームページに使えますか？
+        <span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 1v8M1 5h8"/></svg></span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">はい、商用・非商用問わずご自由にお使いいただけます。SNSに投稿される際、クレジット表記（ @masu_photo など）をいただけると大変嬉しいです。</div></div>
+    </div>
+  </div>
+
+  <!-- 予約・キャンセルについて -->
+  <div class="faq-category rv">
+    <p class="faq-cat-label">予約・キャンセルについて</p>
+
+    <div class="faq-item">
+      <button class="faq-q">
+        どうやって予約しますか？
+        <span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 1v8M1 5h8"/></svg></span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">お問い合わせフォームよりご連絡ください。空き状況を確認の上、日程・場所の調整をします。まずはお気軽にご相談ください。</div></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q">
+        どのくらい前に予約すればいいですか？
+        <span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 1v8M1 5h8"/></svg></span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">2週間前までのご予約をお願いしています。ただし直前でも空きがあればご対応できますので、まずはご相談ください。</div></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q">
+        キャンセルポリシーを教えてください。
+        <span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 1v8M1 5h8"/></svg></span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">
+        下記の通りです。<br><br>
+        ・撮影1週間前まで：キャンセル料無料<br>
+        ・3日前〜1週間前：料金の50%<br>
+        ・3日前以降：料金の100%<br><br>
+        天候による日程変更はキャンセル料不要です。
+      </div></div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ━━━ CTA ━━━ -->
+<section class="cta-banner">
+  <div class="cta-bg"><img src="masuphoto/japan.png" alt="" /></div>
+  <div class="cta-overlay"></div>
+  <div class="cta-in">
+    <div class="cta-copy rv">
+      <h2>解決しない疑問は、直接どうぞ。</h2>
+      <p>お気軽にご相談ください。</p>
+    </div>
+    <a href="contact.html" class="btn-white rv">撮影の相談をする →</a>
+  </div>
+</section>
+
+<!-- ━━━ FOOTER ━━━ -->
+<footer>
+  <div class="ft-main">
+    <div>
+      <div class="ft-logo">KEISUKE MASUO (MaSU)</div>
+      <div class="ft-sub">第一印象を設計するフォトグラファー</div>
+    </div>
+    <ul class="ft-links">
+      <li><a href="index.html">ホーム</a></li>
+      <li><a href="index.html#flow">撮影の流れ</a></li>
+      <li><a href="index.html#voice">実績・お客様の声</a></li>
+      <li><a href="about.html">プロフィール</a></li>
+      <li><a href="work.html">作品を見る</a></li>
+      <li><a href="faq.html">よくある質問</a></li>
+    </ul>
+    <div class="ft-social">
+      <a href="https://www.instagram.com/masumasumasuo7/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+      <a href="contact.html" aria-label="Email"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 7l10 8 10-8"/></svg></a>
+    </div>
+  </div>
+  <div class="ft-bottom">
+    <nav class="ft-nav">
+      <a href="index.html">ホーム</a>
+      <a href="index.html#flow">撮影の流れ</a>
+      <a href="about.html">プロフィール</a>
+      <a href="work.html">作品を見る</a>
+      <a href="faq.html">よくある質問</a>
+      <a href="contact.html">お問い合わせ</a>
+    </nav>
+    <span class="ft-copy">© 2025 Keisuke Masuo Photo. All Rights Reserved.</span>
+  </div>
+</footer>
+
+<script>
+  // アコーディオン
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+
+  // スクロールアニメーション
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); } });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.rv').forEach(el => obs.observe(el));
+
+  // Mobile menu
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileNav = document.getElementById('mobileNav');
+  const mobileNavClose = document.getElementById('mobileNavClose');
+  menuBtn.addEventListener('click', () => mobileNav.classList.add('open'));
+  mobileNavClose.addEventListener('click', () => mobileNav.classList.remove('open'));
+  mobileNav.addEventListener('click', e => { if (e.target === mobileNav) mobileNav.classList.remove('open'); });
+</script>
+</body>
+</html>
