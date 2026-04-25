@@ -110,20 +110,14 @@
     .hero-sub { font-size: 0.9rem; color: rgba(255,255,255,0.6); max-width: 480px; line-height: 1.9; }
 
     /* ─── INTRO ─── */
-    .intro-wrap { max-width: 1200px; margin: 0 auto; padding: 7rem 2rem; display: grid; grid-template-columns: 1fr 1.1fr; gap: 6rem; align-items: center; }
+    .intro-wrap { max-width: 1200px; margin: 0 auto; padding: 7rem 2rem; display: grid; grid-template-columns: 0.6fr 1.4fr; gap: 5rem; align-items: center; }
     .intro-photo { position: relative; }
     .intro-photo-img { aspect-ratio: 3/4; border-radius: 4px; overflow: hidden; }
-    .intro-badge { position: absolute; bottom: -1.5rem; right: -1.5rem; background: var(--ink); color: #fff; padding: 1.2rem 1.6rem; border-radius: 4px; }
-    .intro-badge-num { font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; font-weight: 500; line-height: 1; }
-    .intro-badge-label { font-size: 0.62rem; color: rgba(255,255,255,0.45); letter-spacing: 0.1em; margin-top: 0.25rem; }
     .intro-right { }
     .intro-right .eyebrow { }
     .intro-name { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.6rem, 2.5vw, 2.4rem); font-weight: 500; color: var(--ink); margin-bottom: 0.3rem; }
     .intro-title { font-size: 0.8rem; color: var(--ink3); margin-bottom: 2rem; letter-spacing: 0.06em; }
     .intro-body { font-size: 0.9rem; color: var(--ink2); line-height: 2.2; margin-bottom: 1.4rem; }
-    .intro-stats { display: grid; grid-template-columns: repeat(3,1fr); gap: 1rem; margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid var(--line); }
-    .stat-num { font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; font-weight: 500; color: var(--ink); line-height: 1; }
-    .stat-label { font-size: 0.68rem; color: var(--ink4); margin-top: 0.3rem; }
 
     /* ─── PHILOSOPHY ─── */
     .philosophy-wrap { background: var(--ink); padding: 8rem 2rem; }
@@ -205,8 +199,8 @@
     @media (max-width: 980px) {
       .hd-nav, .hd-cta, .lang-sw { display: none; }
       .hd-menu-btn { display: flex; align-items: center; }
-      .intro-wrap { grid-template-columns: 1fr; gap: 4rem; }
-      .intro-badge { right: 0; bottom: -1rem; }
+      .intro-wrap { grid-template-columns: 1fr; gap: 3rem; }
+      .intro-photo { max-width: 320px; margin: 0 auto; }
       .philosophy-in { grid-template-columns: 1fr; gap: 3.5rem; }
       .global-head { grid-template-columns: 1fr; gap: 1.5rem; }
       .global-grid { grid-template-columns: 1fr 1fr; }
@@ -218,7 +212,6 @@
     @media (max-width: 600px) {
       .global-grid { grid-template-columns: 1fr; }
       .process-grid { grid-template-columns: 1fr; }
-      .intro-stats { grid-template-columns: repeat(3,1fr); }
     }
   </style>
 </head>
@@ -286,10 +279,6 @@
     <div class="intro-photo-img">
       <img src="../../144A2137.JPG" alt="Keisuke Masuo (MaSU) photographer portrait" />
     </div>
-    <div class="intro-badge">
-      <div class="intro-badge-num">40+</div>
-      <div class="intro-badge-label">Countries photographed</div>
-    </div>
   </div>
   <div class="intro-right rv">
     <p class="eyebrow">Keisuke Masuo (MaSU)</p>
@@ -302,20 +291,6 @@
       In every country, the work has been the same: find the moment that reveals who someone truly is. Today, that work happens at the foot of Japan's most iconic mountain — with sessions that use the extraordinary landscape of Fuefuki and Kawaguchiko as a backdrop for something more personal than tourism.
     </p>
     <a href="../contact.html" class="link-arrow">Book a session →</a>
-    <div class="intro-stats">
-      <div>
-        <div class="stat-num">40+</div>
-        <div class="stat-label">Countries</div>
-      </div>
-      <div>
-        <div class="stat-num">10+</div>
-        <div class="stat-label">Years</div>
-      </div>
-      <div>
-        <div class="stat-num">8</div>
-        <div class="stat-label">Sessions / Month</div>
-      </div>
-    </div>
   </div>
 </section>
 
