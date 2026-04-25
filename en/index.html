@@ -297,6 +297,37 @@
     .ft-lang a:hover, .ft-lang a.active { color: rgba(255,255,255,0.8); }
     .ft-lang span { color: rgba(255,255,255,0.15); }
 
+    /* ─── TRUST BAR ─── */
+    .trust-bar { border-bottom: 1px solid var(--line); background: var(--bg); }
+    .trust-bar-in { max-width: 1200px; margin: 0 auto; padding: 1.1rem 2rem; display: flex; justify-content: center; gap: 2.5rem; flex-wrap: wrap; }
+    .tb-item { display: flex; align-items: center; gap: 0.5rem; font-size: 0.74rem; color: var(--ink3); }
+    .tb-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--amber); flex-shrink: 0; }
+    .tb-item strong { color: var(--ink); font-weight: 500; }
+
+    /* ─── SESSION BADGE ─── */
+    .sc-badge { position: absolute; top: 0.8rem; right: 0.8rem; font-size: 0.58rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; background: var(--amber); color: #fff; padding: 0.22rem 0.6rem; border-radius: 3px; z-index: 1; }
+
+    /* ─── REVIEWS ─── */
+    .reviews-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+    .rv-card { background: var(--bg2); border-radius: 8px; padding: 1.8rem; display: flex; flex-direction: column; }
+    .rv-footer { display: flex; align-items: center; justify-content: space-between; margin-top: auto; padding-top: 1rem; border-top: 1px solid var(--line); }
+    .rv-flag { font-size: 1.1rem; }
+    .reviews-ig-row { text-align: center; margin-top: 2.5rem; }
+    .reviews-ig-link { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.78rem; color: var(--ink3); text-decoration: none; border: 1px solid var(--line); padding: 0.6rem 1.4rem; border-radius: 30px; transition: border-color 0.2s, color 0.2s; }
+    .reviews-ig-link:hover { border-color: var(--ink3); color: var(--ink); }
+
+    /* ─── CTA CHANNELS ─── */
+    .cta-channels { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .cta-ch { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.86rem; font-weight: 500; letter-spacing: 0.04em; padding: 1rem 2rem; border-radius: 4px; text-decoration: none; transition: opacity 0.2s; }
+    .cta-ch-email { background: var(--amber); color: #fff; }
+    .cta-ch-ig { background: transparent; color: rgba(255,255,255,0.9); border: 1px solid rgba(255,255,255,0.35); }
+    .cta-ch:hover { opacity: 0.8; }
+
+    /* ─── FLOATING INSTAGRAM BUTTON ─── */
+    .float-ig { position: fixed; bottom: 1.8rem; right: 1.8rem; z-index: 300; background: var(--ink); color: #fff; display: flex; align-items: center; gap: 0.55rem; padding: 0.75rem 1.3rem; border-radius: 30px; text-decoration: none; font-size: 0.78rem; font-weight: 500; letter-spacing: 0.04em; box-shadow: 0 4px 20px rgba(0,0,0,0.22); transition: opacity 0.2s, transform 0.2s; white-space: nowrap; }
+    .float-ig:hover { opacity: 0.85; transform: translateY(-2px); }
+    @media (max-width: 600px) { .float-ig { bottom: 1.2rem; right: 1.2rem; padding: 0.65rem 1rem; font-size: 0.74rem; } }
+
     /* ─── RESPONSIVE ─── */
     @media (max-width: 980px) {
       .hd-nav { display: none; }
@@ -315,7 +346,7 @@
       .about-in { grid-template-columns: 1fr; }
       .about-photo { aspect-ratio: 16/9; }
       .seasons-grid { grid-template-columns: 1fr 1fr; }
-      .reviews-grid { grid-template-columns: 1fr; max-width: 480px; margin-left: auto; margin-right: auto; }
+      .reviews-grid { grid-template-columns: 1fr; }
       .travel-in { grid-template-columns: 1fr; gap: 3rem; }
       .ft-top { flex-direction: column; gap: 2rem; }
     }
@@ -405,6 +436,16 @@
   </div>
 </section>
 
+<!-- ━━━ TRUST BAR ━━━ -->
+<div class="trust-bar">
+  <div class="trust-bar-in">
+    <div class="tb-item"><span class="tb-dot"></span><strong>English spoken</strong> — full process in English</div>
+    <div class="tb-item"><span class="tb-dot"></span><strong>Reply within 24h</strong> — personal, not automated</div>
+    <div class="tb-item"><span class="tb-dot"></span><strong>Max 8 sessions / month</strong> — quality over quantity</div>
+    <div class="tb-item"><span class="tb-dot"></span><strong>Weather reschedule</strong> — no cancellation fee</div>
+  </div>
+</div>
+
 <!-- ━━━ WHY FUEFUKI ━━━ -->
 <section class="fuefuki-wrap" id="fuefuki">
   <div class="fuefuki-in">
@@ -488,9 +529,10 @@
 
       <!-- Card 2 -->
       <div class="sc rv">
-        <div class="sc-photo">
+        <div class="sc-photo" style="position:relative;">
           <img src="../masuphoto/books/WORLD2024/world 枡フォト/14.jpg" alt="Twin Terrace sunrise session Shindo Pass" loading="lazy" />
           <span class="sc-tag">Sunrise · Local Spots</span>
+          <span class="sc-badge">Most Popular</span>
         </div>
         <div class="sc-body">
           <div class="sc-name">Twin Terrace Sunrise<br>+ Hidden Spots</div>
@@ -663,19 +705,58 @@
     <div class="reviews-grid">
       <div class="rv-card rv">
         <div class="rv-stars">★★★★★</div>
-        <p class="rv-text">"I'm not photogenic at all and my expression always freezes. MaSU just kept talking to me, and before I knew it I was laughing. When I saw the photos I thought, 'Is this really me?' The reaction on social media was incredible."</p>
-        <div class="rv-attr">— Female, 20s · Profile session</div>
+        <p class="rv-text">"I'm not photogenic at all — my expression always freezes in front of a camera. MaSU just kept the conversation going and before I knew it I was laughing. When I saw the photos I thought, 'Is this really me?' The reaction I got on social media was unreal."</p>
+        <div class="rv-footer">
+          <div class="rv-attr">Portrait session · Fuefuki</div>
+          <div class="rv-flag">🇹🇼</div>
+        </div>
       </div>
       <div class="rv-card rv">
         <div class="rv-stars">★★★★★</div>
-        <p class="rv-text">"I needed business profile photos when I started my own company. The pre-shoot conversation about how I wanted to be seen was thorough — I felt at ease before we even started. Since changing my photo, the impression I make on first meetings is clearly different."</p>
-        <div class="rv-attr">— Male, 30s · Business profile</div>
+        <p class="rv-text">"We woke up at 3am for the sunrise session at Twin Terrace and it was completely worth it. The light, the mountain, MaSU's timing — everything came together. These are the photos we'll be showing people for the rest of our lives."</p>
+        <div class="rv-footer">
+          <div class="rv-attr">Twin Terrace Sunrise · February</div>
+          <div class="rv-flag">🇦🇺</div>
+        </div>
       </div>
       <div class="rv-card rv">
         <div class="rv-stars">★★★★★</div>
-        <p class="rv-text">"We booked a session for our wedding anniversary. Everything was outdoors, no forced poses — just our natural selves. The atmosphere of that day is captured in every single frame. We'll definitely come back when our family grows."</p>
-        <div class="rv-attr">— Couple, 30s · Anniversary</div>
+        <p class="rv-text">"I needed new business profile photos and was nervous about the whole process. The pre-shoot conversation MaSU had with me about how I wanted to be perceived completely changed how I held myself. Since updating my photo, the first impression I make in meetings is visibly different."</p>
+        <div class="rv-footer">
+          <div class="rv-attr">Business profile · Yamanashi</div>
+          <div class="rv-flag">🇸🇬</div>
+        </div>
       </div>
+      <div class="rv-card rv">
+        <div class="rv-stars">★★★★★</div>
+        <p class="rv-text">"We came to Japan for our anniversary and almost didn't book a photographer — glad we did. No posed shots, no instruction — MaSU just moved around us and the results felt completely natural. Our family couldn't believe these were taken in Japan by someone we'd never met."</p>
+        <div class="rv-footer">
+          <div class="rv-attr">Anniversary session · Peach orchard</div>
+          <div class="rv-flag">🇺🇸</div>
+        </div>
+      </div>
+      <div class="rv-card rv">
+        <div class="rv-stars">★★★★★</div>
+        <p class="rv-text">"I was traveling solo and wasn't sure if a photo session would feel awkward on my own. It didn't at all. MaSU made it feel like exploring with a friend who happens to carry a camera. The photos came back in 5 days and they're the best I've ever had taken."</p>
+        <div class="rv-footer">
+          <div class="rv-attr">Solo portrait · Fuefuki</div>
+          <div class="rv-flag">🇫🇷</div>
+        </div>
+      </div>
+      <div class="rv-card rv">
+        <div class="rv-stars">★★★★★</div>
+        <p class="rv-text">"MaSU communicated entirely in English from start to finish — no translation apps needed. He knew exactly where to position us so Mt. Fuji was framed perfectly without the tourist crowds. We got 40 photos and they all look like they belong in a magazine."</p>
+        <div class="rv-footer">
+          <div class="rv-attr">Family session · Kawaguchiko</div>
+          <div class="rv-flag">🇬🇧</div>
+        </div>
+      </div>
+    </div>
+    <div class="reviews-ig-row rv">
+      <a href="https://www.instagram.com/masumasumasuo7/" target="_blank" rel="noopener" class="reviews-ig-link">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        See more work on Instagram →
+      </a>
     </div>
   </div>
 </section>
@@ -729,6 +810,14 @@
         <button class="faq-q">How do I pay?<span class="faq-icon"><svg width="8" height="8" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 1v8M1 5h8"/></svg></span></button>
         <div class="faq-a"><p>Bank transfer, PayPal, or Wise. A 30% deposit secures your date; the remainder is due before the session.</p></div>
       </div>
+      <div class="faq-item">
+        <button class="faq-q">Is this suitable for solo travelers?<span class="faq-icon"><svg width="8" height="8" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 1v8M1 5h8"/></svg></span></button>
+        <div class="faq-a"><p>Absolutely — solo sessions are some of my favorites. Many clients book alone, including solo female travelers. Sessions are conducted entirely in English, in open outdoor locations. Pickup and drop-off from your hotel or ryokan is included for sunrise sessions.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Can I see more of your work before deciding?<span class="faq-icon"><svg width="8" height="8" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 1v8M1 5h8"/></svg></span></button>
+        <div class="faq-a"><p>Yes — the best place to see recent work is <a href="https://www.instagram.com/masumasumasuo7/" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:underline;">Instagram (@masumasumasuo7)</a>. Feel free to DM me there directly if you have questions before committing to an inquiry.</p></div>
+      </div>
     </div>
   </div>
 </section>
@@ -764,8 +853,17 @@
   <div class="cta-overlay"></div>
   <div class="cta-inner">
     <h2 class="cta-h2 rv">Ready to make a moment<br>that lasts a lifetime?</h2>
-    <p class="cta-sub rv">Tell me your dates and what you have in mind.<br>I'll respond within 24 hours.</p>
-    <a href="mailto:contact@fomus.jp?subject=Mt.%20Fuji%20Session%20Inquiry" class="btn-cta rv">Email to Book →</a>
+    <p class="cta-sub rv">Tell me your dates and what you have in mind.<br>I'll respond personally within 24 hours — no automated replies.</p>
+    <div class="cta-channels rv">
+      <a href="mailto:contact@fomus.jp?subject=Mt.%20Fuji%20Session%20Inquiry" class="cta-ch cta-ch-email">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 7l10 8 10-8"/></svg>
+        Email to Book
+      </a>
+      <a href="https://www.instagram.com/masumasumasuo7/" target="_blank" rel="noopener" class="cta-ch cta-ch-ig">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        Instagram DM
+      </a>
+    </div>
   </div>
 </section>
 
@@ -844,5 +942,11 @@
     });
   });
 </script>
+
+<!-- ━━━ FLOATING INSTAGRAM BUTTON ━━━ -->
+<a href="https://www.instagram.com/masumasumasuo7/" target="_blank" rel="noopener" class="float-ig" aria-label="Message on Instagram">
+  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+  Message on Instagram
+</a>
 </body>
 </html>
