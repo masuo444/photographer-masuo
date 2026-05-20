@@ -316,33 +316,45 @@
   mobileNavClose.addEventListener('click', () => mobileNav.classList.remove('open'));
   mobileNav.addEventListener('click', e => { if (e.target === mobileNav) mobileNav.classList.remove('open'); });
 
-  document.getElementById('submitBtn').addEventListener('click', () => {
-    const name    = document.getElementById('name').value.trim();
-    const email   = document.getElementById('email').value.trim();
-    const purpose = document.querySelector('input[name="purpose"]:checked');
-    const timing  = document.getElementById('timing').value;
-    const message = document.getElementById('message').value.trim();
+  document.getElementById('submitBtn').addEventListener('click', async () => {
+    const name      = document.getElementById('name').value.trim();
+    const email     = document.getElementById('email').value.trim();
+    const purposeEl = document.querySelector('input[name="purpose"]:checked');
+    const timing    = document.getElementById('timing').value;
+    const message   = document.getElementById('message').value.trim();
 
-    if (!name || !email || !purpose) {
+    if (!name || !email || !purposeEl) {
       alert('Please fill in your name, email, and session type.');
       return;
     }
 
-    const body = [
-      `Name: ${name}`,
-      `Email: ${email}`,
-      `Session type: ${purpose.value}`,
-      `Timing: ${timing || 'Not specified'}`,
-      '',
-      `Message:`,
-      message || '(none)',
-    ].join('\n');
+    const btn = document.getElementById('submitBtn');
+    btn.disabled = true;
+    btn.textContent = 'Sending...';
 
-    const mailto = `mailto:contact@fomus.jp?subject=${encodeURIComponent('[Session Inquiry] ' + name)}&body=${encodeURIComponent(body)}`;
-    window.location.href = mailto;
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          lang: 'en', name, email,
+          purpose: purposeEl.value, timing, message,
+        }),
+      });
 
-    document.getElementById('contactForm').style.display = 'none';
-    document.getElementById('formThanks').style.display = 'block';
+      if (res.ok) {
+        document.getElementById('contactForm').style.display = 'none';
+        document.getElementById('formThanks').style.display = 'block';
+      } else {
+        alert('Failed to send. Please contact us directly at contact@fomus.jp');
+        btn.disabled = false;
+        btn.textContent = 'Send Message';
+      }
+    } catch {
+      alert('Failed to send. Please contact us directly at contact@fomus.jp');
+      btn.disabled = false;
+      btn.textContent = 'Send Message';
+    }
   });
 </script>
 </body>

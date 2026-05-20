@@ -474,40 +474,49 @@
     document.getElementById('optEmail').classList.add('co-active');
   }
 
-  // Contact form → mailto
-  document.getElementById('submitBtn').addEventListener('click', () => {
-    const name    = document.getElementById('name').value.trim();
-    const email   = document.getElementById('email').value.trim();
+  // Contact form → Resend API
+  document.getElementById('submitBtn').addEventListener('click', async () => {
+    const name        = document.getElementById('name').value.trim();
+    const email       = document.getElementById('email').value.trim();
     const contactInfo = document.getElementById('contactInfo').value.trim();
-    const purpose = document.querySelector('input[name="purpose"]:checked');
-    const timing  = document.getElementById('timing').value;
-    const location = document.getElementById('location').value.trim();
-    const usage = document.getElementById('usage').value.trim();
-    const message = document.getElementById('message').value.trim();
+    const purposeEl   = document.querySelector('input[name="purpose"]:checked');
+    const timing      = document.getElementById('timing').value;
+    const location    = document.getElementById('location').value.trim();
+    const usage       = document.getElementById('usage').value.trim();
+    const message     = document.getElementById('message').value.trim();
 
-    if (!name || !email || !purpose) {
+    if (!name || !email || !purposeEl) {
       alert('お名前・メールアドレス・撮影の目的は必須です。');
       return;
     }
 
-    const body = [
-      `お名前: ${name}`,
-      `メールアドレス: ${email}`,
-      `電話番号・Instagram: ${contactInfo || '未記入'}`,
-      `撮影の目的: ${purpose.value}`,
-      `希望時期: ${timing || '未記入'}`,
-      `希望エリア・場所: ${location || '未記入'}`,
-      `写真の使い道: ${usage || '未記入'}`,
-      '',
-      `メッセージ:`,
-      message || '（なし）',
-    ].join('\n');
+    const btn = document.getElementById('submitBtn');
+    btn.disabled = true;
+    btn.textContent = '送信中...';
 
-    const mailto = `mailto:contact@fomus.jp?subject=${encodeURIComponent('【撮影相談】' + name)}&body=${encodeURIComponent(body)}`;
-    window.location.href = mailto;
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          lang: 'ja', name, email, contactInfo,
+          purpose: purposeEl.value, timing, location, usage, message,
+        }),
+      });
 
-    document.getElementById('contactForm').style.display = 'none';
-    document.getElementById('formThanks').style.display = 'block';
+      if (res.ok) {
+        document.getElementById('contactForm').style.display = 'none';
+        document.getElementById('formThanks').style.display = 'block';
+      } else {
+        alert('送信に失敗しました。お手数ですが contact@fomus.jp まで直接ご連絡ください。');
+        btn.disabled = false;
+        btn.textContent = '送信する';
+      }
+    } catch {
+      alert('送信に失敗しました。お手数ですが contact@fomus.jp まで直接ご連絡ください。');
+      btn.disabled = false;
+      btn.textContent = '送信する';
+    }
   });
 </script>
 </body>
