@@ -28,6 +28,21 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://photographer.fomus.jp/yamanashi-profile-photo.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://photographer.fomus.jp/kofu-konkatsu-photo.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://photographer.fomus.jp/yamanashi-matching-app-photo.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://photographer.fomus.jp/faq.html</loc>
     <xhtml:link rel="alternate" hreflang="ja" href="https://photographer.fomus.jp/faq.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://photographer.fomus.jp/en/faq.html"/>
@@ -68,6 +83,26 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://photographer.fomus.jp/work.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://photographer.fomus.jp/en/isawa-onsen-photographer.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://photographer.fomus.jp/en/mt-fuji-photographer.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://photographer.fomus.jp/en/kawaguchiko-photographer.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://photographer.fomus.jp/en/yamanashi-travel-photographer.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://photographer.fomus.jp/en/faq.html</loc>
