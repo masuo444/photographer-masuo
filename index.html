@@ -330,10 +330,23 @@
       border-radius: 8px; overflow: hidden;
     }
     .purpose-card {
-      min-height: 220px;
       background: var(--bg2);
       padding: 1.45rem;
       display: flex; flex-direction: column;
+    }
+    .purpose-card-img {
+      position: relative;
+      height: 190px;
+      overflow: hidden;
+      margin: -1.45rem -1.45rem 1.2rem;
+    }
+    .purpose-card-img img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+    .purpose-img-note {
+      position: absolute; bottom: 0.45rem; right: 0.5rem;
+      font-size: 0.55rem; color: rgba(255,255,255,0.75);
+      background: rgba(0,0,0,0.38);
+      padding: 0.12rem 0.38rem; border-radius: 2px;
+      letter-spacing: 0.02em;
     }
     .purpose-tag {
       font-size: 0.6rem; letter-spacing: 0.16em;
@@ -773,6 +786,10 @@
     </div>
     <div class="purpose-grid rv">
       <article class="purpose-card">
+        <div class="purpose-card-img">
+          <img src="purpose-business.png" alt="ビジネス・プロフィール写真イメージ" loading="lazy" />
+          <span class="purpose-img-note">※こちらはイメージ画像です</span>
+        </div>
         <p class="purpose-tag">Business</p>
         <h3 class="purpose-title">プロフィール・ビジネス写真</h3>
         <p class="purpose-text">名刺、会社HP、登壇資料、SNSに使える、信頼感のある一枚へ。</p>
@@ -782,6 +799,10 @@
         <a href="yamanashi-profile-photo.html" class="purpose-link">詳しく見る →</a>
       </article>
       <article class="purpose-card">
+        <div class="purpose-card-img">
+          <img src="purpose-dating.png" alt="婚活・マッチングアプリ写真イメージ" loading="lazy" />
+          <span class="purpose-img-note">※こちらはイメージ画像です</span>
+        </div>
         <p class="purpose-tag">Dating</p>
         <h3 class="purpose-title">婚活・マッチングアプリ写真</h3>
         <p class="purpose-text">作り込みすぎず、清潔感と人柄が伝わる自然なプロフィール写真へ。</p>
@@ -790,8 +811,11 @@
         </div>
         <a href="kofu-konkatsu-photo.html" class="purpose-link">詳しく見る →</a>
       </article>
-
       <article class="purpose-card">
+        <div class="purpose-card-img">
+          <img src="purpose-event.png" alt="イベント・登壇撮影イメージ" loading="lazy" />
+          <span class="purpose-img-note">※こちらはイメージ画像です</span>
+        </div>
         <p class="purpose-tag">Event</p>
         <h3 class="purpose-title">イベント・登壇撮影</h3>
         <p class="purpose-text">あとから広報やSNSで使いやすい場面まで意識して記録します。</p>
