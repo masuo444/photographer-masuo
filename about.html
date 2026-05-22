@@ -75,6 +75,8 @@
     .hd-nav a.current { color: var(--ink); font-weight: 500; }
     .hd-cta { flex-shrink: 0; display: inline-flex; align-items: center; gap: 0.35rem; background: var(--ink); color: #fff; font-size: 0.76rem; font-weight: 500; letter-spacing: 0.05em; padding: 0.55rem 1.15rem; border-radius: 20px; text-decoration: none; transition: opacity 0.2s; }
     .hd-cta:hover { opacity: 0.75; }
+    .hd-ig { display: flex; align-items: center; color: var(--ink2); transition: color 0.15s; margin-left: 0.5rem; flex-shrink: 0; }
+    .hd-ig:hover { color: var(--ink); }
     .lang-sw { display: flex; align-items: center; gap: 2px; flex-shrink: 0; }
     .ls-btn { font-size: 0.68rem; font-weight: 500; letter-spacing: 0.08em; color: var(--ink3); text-decoration: none; padding: 0.28rem 0.52rem; border-radius: 3px; transition: color 0.15s, background 0.15s; }
     .ls-btn:hover { color: var(--ink); }
@@ -356,6 +358,7 @@
     @media (max-width: 980px) {
       .hd-nav { display: none; }
       .hd-cta { display: none; }
+      .hd-ig { display: none; }
       .lang-sw { display: none; }
       .hd-menu-btn { display: flex; align-items: center; }
       .about-hero { grid-template-columns: 1fr; min-height: auto; }
@@ -398,6 +401,9 @@
       <li><a href="faq.html">FAQ</a></li>
     </ul>
     <a href="contact.html" class="hd-cta">撮影の相談をする</a>
+    <a href="https://www.instagram.com/masumasumasuo7/" target="_blank" rel="noopener" class="hd-ig" aria-label="Instagram">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+    </a>
     <button class="hd-menu-btn" id="menuBtn" aria-label="メニュー">
       <svg width="22" height="16" viewBox="0 0 22 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 1h20M1 8h20M1 15h20"/></svg>
     </button>
